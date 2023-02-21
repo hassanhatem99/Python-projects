@@ -245,61 +245,61 @@ def comp_move(board, comp_pos):
         #BLOCK MOVEMENT
         while True:
             
-            if board[1]!= "." and "." in [board[2],board[4],board[5]]:
-                comp_pos = random.choice([2,4,5])
+            if board[1]!= "." and "." in [board[2],board[3],board[4],board[5],board[7],board[9]]:
+                comp_pos = random.choice([2,3,4,5,5,5,7,9])
                 if board[comp_pos] != ".":
                     continue
                 break
 
-            elif board[2]!= "." and "." in [board[1],board[3],board[5]]:
-                comp_pos = random.choice([1,3,5])
+            elif board[2]!= "." and "." in [board[1],board[3],board[5],board[8]]:
+                comp_pos = random.choice([1,3,5,5,8])
                 if board[comp_pos] != ".":
                     continue
                 break
 
-            elif board[3]!= "." and "." in [board[2],board[5],board[6]]:
-                comp_pos = random.choice([2,5,6])
+            elif board[3]!= "." and "." in [board[1],board[2],board[5],board[6],board[7],board[9]]:
+                comp_pos = random.choice([1,2,5,5,5,6,7,9])
                 if board[comp_pos] != ".":
                     continue
                 break
             
-            elif board[4]!= "." and "." in [board[1],board[5],board[7]]:
-                comp_pos = random.choice([1,5,7])
+            elif board[4]!= "." and "." in [board[1],board[5],board[6],board[7]]:
+                comp_pos = random.choice([1,5,5,6,7])
                 if board[comp_pos] != ".":
                     continue
                 break
 
             elif board[5]!= "." and "." in board:
-                comp_pos = random.choice([1,2,3,4,5,6,7,8,9])
+                comp_pos = random.choice([1,2,3,4,6,7,8,9])
                 if board[comp_pos] != ".":
                     continue
                 break
 
-            elif board[6]!= "." and "." in [board[3],board[5],board[9]]:
-                comp_pos = random.choice([3,5,9])
+            elif board[6]!= "." and "." in [board[3],board[4],board[5],board[9]]:
+                comp_pos = random.choice([3,4,5,5,9])
                 if board[comp_pos] != ".":
                     continue
                 break
             
-            elif board[7]!= "." and "." in [board[4],board[5],board[8]]:
-                comp_pos = random.choice([4,5,8])
+            elif board[7]!= "." and "." in [board[1],board[3],board[4],board[5],board[8],board[9]]:
+                comp_pos = random.choice([1,3,4,5,5,5,8])
                 if board[comp_pos] != ".":
                     continue
                 break
 
-            elif board[8]!= "." and "." in [board[5],board[7],board[9]]:
-                comp_pos = random.choice([5,7,9])
+            elif board[8]!= "." and "." in [board[2],board[5],board[7],board[9]]:
+                comp_pos = random.choice([2,5,5,7,9])
                 if board[comp_pos] != ".":
                     continue
                 break
 
-            elif board[9]!= "." and "." in [board[5],board[6],board[8]]:
-                comp_pos = random.choice([5,6,8])
+            elif board[9]!= "." and "." in [board[1],board[3],board[5],board[6],board[7],board[8]]:
+                comp_pos = random.choice([1,3,5,5,5,6,7,8])
                 if board[comp_pos] != ".":
                     continue
                 break
             else:
-                comp_pos = random.randint(1,9)
+                comp_pos = random.choice([1,2,3,4,5,5,5,5,5,6,7,8,9])
                 break
 
             
