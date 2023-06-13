@@ -1,0 +1,17 @@
+Times:
+
+10 simulations: 0m0.028s
+100 simulations: 0m0.042s
+1000 simulations: 0m3.451s
+10000 simulations: 0m25.811s
+100000 simulations: 0m0.729s
+1000000 simulations: 0m7.347s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: Spain and Portugal winning it, as they never
+get the number 1 spot when it's 1000 simulations
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: 1000 simulations, because it's the most consistent
+with Brazil or Belgium getting the win
